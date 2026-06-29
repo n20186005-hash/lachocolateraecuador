@@ -27,74 +27,84 @@ export type Translations = {
 export const translations: Record<Locale, Translations> = {
   zh: {
     nav: { about: "景点概览", visiting: "游览指南", transportation: "交通接驳", tips: "游览建议", gallery: "照片画廊", reviews: "游客评价", faq: "常见问题", location: "地图位置" },
-    hero: { tagline: "萨尔瓦多海岸线上的自然奇观与冲浪天堂", title: "La Chocolatera", subtitle: "萨尔瓦多省萨利纳斯市", cta: "探索海岸风光" },
+    hero: { tagline: "厄瓜多尔大陆最西端·惊涛拍岸的自然奇观", title: "La Chocolatera", subtitle: "圣埃伦娜省萨利纳斯市 · 海军基地内", cta: "探索巧克力海" },
     rating: { reviews: "条评价", source: "Google 评论" },
     about: {
       title: "景点概览",
-      p1: "La Chocolatera 位于厄瓜多尔圣埃伦娜省萨尔瓦多市（Salinas）最西端的海岸线上，是该国大陆最西端的著名旅游胜地。这里拥有壮丽的太平洋海景、金色的沙滩和得天独厚的海浪条件，是厄瓜多尔最受欢迎的海滨度假胜地之一。\n\nLa Chocolatera 的名字来源于历史上该地区曾存在的可可种植园（Chocolate 意为巧克力）。如今，这里已成为集冲浪、海滩休闲、观鲸和欣赏日落于一体的综合性 coastal destination。干净的海水、稳定的海浪和完善的旅游设施吸引着来自世界各地的游客。",
-      p2: "La Chocolatera 的海滩绵延数公里，沙质细腻，海水清澈。这里是冲浪爱好者的天堂，全年都有适合不同水平冲浪者的海浪。除了水上运动，游客还可以在海滩上享受日光浴、骑马漫步，或是在沿海的悬崖步道上欣赏壮丽的太平洋日落。建议安排在清晨或傍晚时分游览，以避开正午的强烈阳光并欣赏到最美的日出日落景色。",
-      highlights: { title: "景点速览", items: ["地理位置：厄瓜多尔，圣埃伦娜省，萨利纳斯市", "厄瓜多尔大陆最西端的著名海滩", "营业时间：08:00–15:00", "特色活动：冲浪、海滩休闲、观鲸、欣赏日落", "配套设施：冲浪学校、餐厅、停车场"] },
+      p1: "La Chocolatera 位于厄瓜多尔大陆的最西端(Punta Santa Elena),坐落在萨利纳斯海军基地(Base Naval de Salinas)之内。这里不是传统的金色沙滩海滩,而是一处礁石嶙峋的悬崖海岸--两大洋流(洪堡寒流与赤道暖流)在此交汇,猛烈拍击礁石,卷起海底沙泥,使海水呈现出如同沸腾巧克力般的浑浊棕褐色,\"La Chocolatera\"(巧克力壶)之名便由此而来。\n\n此处的海浪极其猛烈,暗流湍急,严禁下海游泳。但其壮丽的惊涛拍岸景象、独特的\"巧克力海\"自然奇观,以及旁边的海狮栖息地(La Lobería),使其成为了厄瓜多尔最具特色的海岸风景名胜之一。",
+      p2: "进入 La Chocolatera 需通过海军基地的军事检查站,所有游客必须出示护照或身份证件。景点周边设有冲浪点(适合有经验的冲浪者),但核心景区是观赏巨浪拍打礁石和欣赏太平洋日落的地方。由于海风极大,建议携带防风外套。此处不适合铺沙滩巾晒太阳,但站在悬崖边感受大自然的力量,是极为震撼的体验。",
+      highlights: { title: "景点速览", items: ["地理位置:厄瓜多尔大陆最西端,圣埃伦娜省萨利纳斯市", "地貌特征:礁石悬崖海岸,非沙滩浴场,严禁下海游泳", "命名由来:洋流交汇致海水呈巧克力色,意为\"巧克力壶\"", "必带证件:护照或身份证(需通过海军基地检查站)", "标志性景观:惊涛拍岸、La Lobería 海狮栖息地、太平洋日落"] },
       timeline: { title: "发展历程", events: [
-        { period: "20世纪中期: 早期开发", description: "La Chocolatera 地区开始作为萨利纳斯市延伸的海滨休闲区域被开发，初期主要服务于当地居民周末休闲。" },
-        { period: "1990年代: 旅游业兴起", description: "随着厄瓜多尔海滨旅游业的蓬勃发展，La Chocolatera 凭借其优质的海浪和海滩条件，逐渐成为国内外游客热衷的冲浪和海滨度假目的地。" },
-        { period: "2000年代至今: 基础设施完善", description: "当地政府持续投资改善旅游基础设施，包括停车场、海滨步道、冲浪学校、餐厅和安保设施，使 La Chocolatera 成为安全、便利的家庭友好型海滨度假区。" }
+        { period: "20世纪前: 海军基地范围", description: "La Chocolatera 所在区域长期以来属于厄瓜多尔海军基地(Base Naval de Salinas)的管辖范围,不对公众开放。" },
+        { period: "20世纪后期: 有限开放", description: "随着萨利纳斯旅游业的发展,海军基地在限制条件下向游客开放了这一区域,但进入仍需通过军事检查站。" },
+        { period: "21世纪初至今: 成为标志性景点", description: "凭借其独特的自然奇观和\"厄瓜多尔大陆最西端\"的地理标签,La Chocolatera 逐渐成为厄瓜多尔最具代表性的海岸景点之一,吸引了大量冲浪者和自然爱好者。" }
       ]},
-      management: { title: "景点管理与官方机构", content: "La Chocolatera 海滩由萨利纳斯市政府和圣埃伦娜省政府共同管理和维护。作为免费对外开放的公共海滩，政府致力于保持其清洁、安全和良好的旅游环境。" }
+      management: { title: "景点管理与访问须知", content: "La Chocolatera 位于厄瓜多尔海军基地内部,进入需通过军事检查站并接受证件查验。请务必携带护照或厄瓜多尔身份证件。景点本身免费开放,但受海军基地管理规定约束,开放时间可能随时调整。" }
     },
     history: {
-      title: "历史背景与文化记忆",
-      intro: "La Chocolatera 的名字承载着这片土地的历史记忆。在西班牙殖民时期及之后的一段时间里，这一地区曾是可可（巧克力原料）种植园的一部分。'Chocolatera' 这个名称便来源于此，意为'巧克力生产地'。虽然如今的可可种植已不再，但这个富有诗意的名字却被保留了下来，成为了这片美丽海岸线的代名词。\n\n随着时间的推移，这里从一片农业用地逐渐转变为厄瓜多尔最重要的海滨旅游目的地之一。萨利纳斯市作为圣埃伦娜省的主要旅游城市，其西端的 La Chocolatera 因其未被过度开发的自然美景和优良的海浪条件而备受青睐。",
+      title: "名字的由来与自然传奇",
+      intro: "La Chocolatera 这个富有诗意的名字,来源于此处独一无二的自然现象,而非历史上任何与巧克力相关的产业。\n\n在厄瓜多尔大陆的最西端--蓬塔圣埃伦娜(Punta Santa Elena),两股世界著名的洋流在此激烈交汇:来自南极的洪堡寒流(Corriente de Humboldt)与赤道暖流相遇,加上强劲的海风,共同造就了一段极其猛烈的海浪。海浪猛烈地撞击礁石海岸,将海底的泥沙卷起,使原本清澈的太平洋海水在此处呈现出一种独特的、如同沸腾巧克力般的深棕褐色。\n\n当地人便用\"La Chocolatera\"(意为\"巧克力壶\"或\"煮巧克力的人\")来形象地命名这片海域。",
       sections: [
-        { subtitle: "1. 地名由来：从可可园到旅游胜地", content: "La Chocolatera 这一名称直接翻译为'巧克力屋'或'巧克力生产地'。在历史上，厄瓜多尔沿海地区的可可豆品质优良，这一地区曾遍布可可种植园。虽然农业活动已经停止，但地名作为历史的见证被完整保留。\n\n如今，当人们来到 La Chocolatera，虽然不再看到可可树，但名字背后的历史故事却为这片海滩增添了一层文化的厚度。游客在享受阳光海滩的同时，也在不经意间触摸着这片土地的历史脉络。" },
-        { subtitle: "2. 萨尔瓦多市的旅游崛起", content: "萨尔瓦多市（Salinas）是圣埃伦娜省的一座沿海城市，以其优美的海滩和完备的旅游设施而闻名。作为厄瓜多尔最具代表性的海滨度假城市之一，萨利纳斯在20世纪后期开始大力发展旅游业。\n\nLa Chocolatera 位于萨利纳斯市的最西端，被认为是该市最美、最适宜冲浪的海滩段。随着城市旅游基础设施的不断完善，La Chocolatera 逐渐成为了萨利纳斯乃至整个厄瓜多尔海滨旅游的亮丽名片。" }
+        { subtitle: "1. 巧克力海:洋流交汇的自然奇观", content: "La Chocolatera 最核心的自然现象,便是那如同沸腾巧克力般的褐色海水。这并不是污染,而是两大洋流交汇加上海浪猛烈撞击礁石海岸的共同结果。\n\n在巨浪拍击礁石的瞬间,还会形成类似\"喷潮孔\"(Blowhole)的自然现象--海水从礁石缝隙中猛烈喷射而出,场面极为壮观。对于热爱自然奇观和地质现象的旅行者来说,这里是厄瓜多尔海岸线上一本活的海洋物理教科书。" },
+        { subtitle: "2. 厄瓜多尔大陆最西端", content: "La Chocolatera 坐落在蓬塔圣埃伦娜(Punta Santa Elena),这是厄瓜多尔大陆国土的最西端。这个\"地理之最\"的标签,使其具备了极高的地理探索和旅行打卡价值。\n\n站在大陆尽头的礁石上,面向浩瀚的太平洋,感受两大洋流交汇处的狂野海风 -- 这种\"世界尽头\"般的体验,是 La Chocolatera 最打动人心的魅力所在。" }
       ],
       buildings: {
-        title: "周边文化看点",
+        title: "周边景点与延伸探索",
         items: [
-          "圣埃伦娜考古博物馆（Museo de la Liga Cantonal de Santa Elena）：了解该地区前哥伦布时期的历史文化。",
-          "萨利纳斯海洋博物馆（Museo Oceanográfico de Salinas）：展示厄瓜多尔丰富的海洋生物多样性。",
-          " Punta Carnero 海滩：距离 La Chocolatera 不远的另一个优质海滩，以清澈的海水和丰富的海洋生物闻名。"
+          "La Lobería(海狮栖息地):紧邻 La Chocolatera,是海狮常年栖息的海岸礁石区,游客可以近距离观察这些海洋哺乳动物。",
+          "Punta Carnero 海滩:距离约10分钟车程,是一片相对平静的沙滩,适合游泳(与 La Chocolatera 的惊险礁石海岸形成鲜明对比)。",
+          "萨利纳斯海滨大道(Malecón de Salinas):拥有完善的旅游设施、餐厅和夜生活,是体验厄瓜多尔海滨度假文化的最佳地点。"
         ],
-        conclusion: "La Chocolatera 不仅是一片美丽的海滩，更是厄瓜多尔海滨文化的缩影。在这里，您可以感受到当地人对海洋的热爱，以及他们将自然美景与旅游休闲完美结合的生活智慧。"
+        conclusion: "La Chocolatera 不是传统意义上\"晒太阳、游泳\"的沙滩度假地,而是一处让人感受大自然狂野力量的地理奇观。站在礁石上,看着巧克力色的巨浪猛烈拍岸,旁边还有懒洋洋的海狮在礁石上晒太阳 -- 这种体验,是厄瓜多尔海岸最独特的记忆之一。"
       }
     },
     ecology: {
-      title: "生态与海洋环境",
+      title: "海洋生态与野生动物：La Lobería 海狮栖息地",
       sections: [
-        { subtitle: "海洋生态与生物多样性", content: "La Chocolatera 的海域是厄瓜多尔太平洋沿岸重要的海洋生态系统之一。这里的水质清澈，海洋生物多样性丰富。在合适的季节（通常在6月至9月），游客还有机会在近海看到座头鲸（Humpback Whale）和海豚。\n\n海滩周围的岩石区和潮汐池也是观察海洋生物的绝佳地点。退潮时，您可以在潮汐池中看到各种贝类、海星和小型鱼类。这里的生态环境相对原始，是进行海洋生态教育和生态旅游的理想场所。" },
-        { subtitle: "海岸保护与可持续发展", content: "作为厄瓜多尔重要的旅游目的地，La Chocolatera 的生态环境保护备受关注。当地政府和社区正在努力采取措施保护海岸线，防止过度开发和污染。\n\n游客在享受海滩美景的同时，也被鼓励参与到保护行动中，例如不留下垃圾、不干扰野生动物、使用环保防晒霜等。这些举措有助于确保 La Chocolatera 的自然美景能够永续传承，造福未来的世代。" }
+        { subtitle: "La Lobería:海狮的家园", content: "紧邻 La Chocolatera 的 La Lobería,是一片礁石海岸,常年栖息着大量的海狮(Lobo marino)。这些庞大的海洋哺乳动物慵懒地躺在礁石上晒太阳,或在海浪中灵活游弋,是游客来到此处绝对不会错过的精彩看点。\n\n观看海狮无需额外付费,只需安静地在安全距离内观察即可。请勿投喂或惊扰它们,保持至少2米的距离。" },
+        { subtitle: "观鲸季节与海洋生物多样性", content: "每年6月至9月,座头鲸(Ballena jorobada)会沿着厄瓜多尔海岸迁徙,运气好的话在 La Chocolatera 的高处礁石上可以用望远镜观测到远处的鲸鱼喷潮。\n\n此外,这里的礁石潮池(tide pools)中栖息着各种贝类、海星和小型海洋生物,是带孩子进行海洋自然教育的绝佳场所。由于此处属于海军基地管辖,生态环境相对原始,保护工作也较为到位。" },
+        { subtitle: "洋流交汇的海洋意义", content: "洪堡寒流与赤道暖流在此外交汇,不仅造就了独特的\"巧克力海\"现象,还造就了这一带丰富的海洋生物多样性。冷水性与暖水性鱼类在此交汇,使这里成为厄瓜多尔太平洋沿岸最重要的海洋生态观察点之一。\n\n对于海洋生物学爱好者和自然摄影师来说,La Chocolatera 提供了极为难得的研究和拍摄机会。" }
       ]
     },
     visiting: {
       title: "游览指南",
-      hours: { title: "开放时间", content: "每天：08:00 – 15:00", note: "建议出发前通过官方渠道或当地旅游信息确认最新开放时间。" },
-      price: { title: "门票参考", content: "免费对外开放，无需预约", note: "停车费约为$2-3美元，冲浪课程和海滩设备租赁需额外付费。" },
-      duration: { title: "建议游览时长与气候", content: "建议预留 3 - 6 小时", note: "萨利纳斯属热带干旱气候，全年气温较高（22-30°C）。旱季（5-12月）是最佳游览季节，海浪条件也最为稳定。" },
-      animals: { title: "海洋居民：丰富的太平洋生态", content: "La Chocolatera 的海域栖息着丰富的海洋生物，包括多种热带鱼类、海龟、海豚，在观鲸季节还有机会看到座头鲸。海滩周围的岩石区也有各种贝类和甲壳类动物。" },
-      bring: { title: "游览准备", items: ["高倍数防水防晒霜", "泳衣、沙滩巾和遮阳帽", "饮用水和零食", "冲浪板或租赁费用（也可现场租赁）", "相机或手机（准备拍摄壮丽的日落）", "轻便的沙滩鞋或凉鞋"] }
+      hours: { title: "开放与放行时间", content: "每日约 08:00 – 15:00\n(部分资料显示最晚可至17:00,但受海军基地实际管制影响)", note: "⚠️ 重要提醒:La Chocolatera 位于海军基地内部,最终放行时间受基地军事管制影响,可能随时调整。建议尽量在14:00前到达,并务必携带身份证件。" },
+      price: { title: "费用参考", content: "景点免费开放,无需预约", note: "停车费约为 $2-3 美元。冲浪者需注意:此处海浪极其猛烈,仅适合有经验的冲浪者,初学者请勿尝试。" },
+      duration: { title: "建议游览时长与注意事项", content: "建议预留 2 - 4 小时", note: "此处海风极大,气温比萨利纳斯市区低3-5°C。严禁下海游泳--暗流极其危险,已有多人因此遇难。适合在悬崖安全区域观赏海浪和海狮。" },
+      animals: { title: "野生动物:海狮与海洋生物", content: "La Chocolatera 最著名的常驻居民是海狮,栖息在隔壁的 La Lobería 礁石区。此外,观鲸季节(6-9月)有机会用望远镜看到座头鲸。礁石潮池中有各种贝类和海星。这里不是沙滩游泳区,而是野生海岸观察区。" },
+      bring: { title: "游览必备物品", items: ["护照或身份证件(必须通过海军检查站)", "防风外套或厚外套(海边风力极大,气温偏低)", "望远镜(用于观察海狮和远处的座头鲸)", "高倍数防水防晒霜(赤道紫外线依然强烈)", "饮用水(景区内无商店)", "相机或手机(拍摄惊涛拍岸和海狮)", "坚固的防滑鞋(礁石地面湿滑,严禁穿人字拖)"] }
     },
     transportation: {
       title: "交通接驳",
-      airport: { title: "从瓜亚基尔机场出发", content: "距离瓜亚基尔国际机场（GYE）约 140 公里，车程约 2 - 2.5 小时。", options: [
-        { name: "租车自驾（最自由）", price: "$40 - $70 美元/天", time: "约 2-2.5 小时", steps: ["在机场租车后，沿 E40 公路向西行驶", "经过圣埃伦娜市后继续前往萨利纳斯", "跟随路标指示即可到达 La Chocolatera"] },
-        { name: "机场大巴+出租车（经济实惠）", price: "$10 - $20 美元", time: "约 3 小时", steps: ["在机场乘坐前往萨利纳斯的长途巴士", "到达萨利纳斯后换乘出租车前往 La Chocolatera", "车程约15分钟"] }
+      airport: { title: "从瓜亚基尔机场出发", content: "距离瓜亚基尔国际机场(GYE)约 140 公里,车程约 2 - 2.5 小时。", options: [
+        { name: "租车自驾(最自由)", price: "$40 - $70 美元/天", time: "约 2-2.5 小时", steps: ["在机场租车后,沿 E40 公路向西行驶", "进入萨利纳斯后跟随路标前往 La Chocolatera", "到达海军基地检查站,出示护照/身份证后放行"] },
+        { name: "机场大巴+出租车(经济实惠)", price: "$10 - $20 美元", time: "约 3 小时", steps: ["在机场乘坐前往萨利纳斯的长途巴士", "到达萨利纳斯后换乘出租车前往 La Chocolatera", "出租车司机通常熟悉海军检查站的位置"] }
       ]},
-      city: { title: "从萨利纳斯市区前往", content: "从萨利纳斯市中心出发，沿海滨大道向西行驶，根据路标指示即可到达 La Chocolatera 海滩入口。", steps: ["导航：在 Google Maps 中输入 La Chocolatera Salinas Ecuador", "停车：海滩设有专用停车场，停车费约为$2-3美元"] },
-      selfDrive: { title: "从其他城市前往", content: "从基多或昆卡出发，先抵达瓜亚基尔，再沿 E40 公路前往萨利纳斯。", steps: ["从基多：乘坐国内航班至瓜亚基尔，再转乘车（约2.5小时）", "从昆卡：乘坐长途巴士至瓜亚基尔，再转乘车（约3小时）"] }
+      city: { title: "从萨利纳斯市区前往", content: "从萨利纳斯市中心出发,沿海滨大道向西行驶约5公里,即可到达海军基地检查站。", steps: ["导航:在 Google Maps 中输入 La Chocolatera Salinas Ecuador", "检查站:所有乘客需下车出示护照/身份证件,通过后方可进入", "停车:穿过检查站后,有专用停车场,停车费约 $2-3 美元"] },
+      selfDrive: { title: "从其他城市前往", content: "从基多或昆卡出发,先抵达瓜亚基尔,再沿 E40 公路前往萨利纳斯。", steps: ["从基多:乘坐国内航班至瓜亚基尔,再转乘车(约2.5小时)", "从昆卡:乘坐长途巴士至瓜亚基尔,再转乘车(约3小时)"] }
     },
-    tips: { title: "游览建议", items: ["最佳游览时间：清晨 08:00 - 11:00 或傍晚 15:00 - 日落", "冲浪者天堂：全年都有适合不同水平的海浪", "壮丽的日落：La Chocolatera 的太平洋日落是世界级的", "注意防晒：赤道地区的紫外线非常强烈", "尊重当地文化：保持海滩清洁，不干扰野生动物"] },
+    tips: { title: "游览建议与安全提醒", items: [
+      "⚠️ 严禁下海游泳:暗流极其危险,此处已发生多起溺亡事故",
+      "必带护照/身份证:海军检查站100%查验证件,无证件会被拒之门外",
+      "防风装备:海风极大,即使是旱季也建议携带防风外套",
+      "最佳观赏时间:清晨海风相对较小时,或傍晚观赏日落(17:00前需离开)",
+      "穿防滑鞋:礁石地面湿滑,严禁穿人字拖或光脚行走",
+      "海狮观察:保持安静,与海狮保持至少2米距离,严禁投喂",
+      "望远镜是神器:可以清晰观察海狮和远处的鲸鱼喷潮"
+    ] },
     gallery: { title: "精彩照片", viewMore: "在 Google Maps 查看更多相片" },
     reviews: { title: "游客评价", subtitle: "来自 Google Maps 的真实评价", viewMore: "在 Google Maps 查看更多评价" },
     faq: { title: "常见问题", subtitle: "深入了解 La Chocolatera", items: [
-      { question: "La Chocolatera 的开放时间是？", answer: "每天 08:00 - 15:00。建议出发前通过官方渠道确认最新开放时间。" },
-      { question: "La Chocolatera 需要门票吗？", answer: "进入海滩是免费的，无需预约。但停车费约为$2-3美元，冲浪课程和设备租赁需额外付费。" },
-      { question: "La Chocolatera 适合家庭出游吗？", answer: "非常适合！这里有平缓的沙滩和相对安全的游泳区域，非常适合家庭出游。但请注意海浪和潮汐情况。" },
-      { question: "La Chocolatera 适合冲浪吗？", answer: "非常适合！La Chocolatera 是厄瓜多尔最受欢迎的冲浪目的地之一，全年都有稳定的海浪，适合从初学者到专业冲浪者的各个水平。" },
-      { question: "最佳游览季节是什么时候？", answer: "旱季（5月至12月）是最佳游览季节，此时天气晴朗，海浪条件稳定。观鲸季节（6月至9月）还有机会看到座头鲸。" },
-      { question: "La Chocolatera 附近还有哪些值得一游的景点？", answer: "可以顺路参观萨利纳斯的海滨大道（Malecón de Salinas）、Punta Carnero 海滩、圣埃伦娜半岛考古博物馆等。" }
+      { question: "La Chocolatera 的开放时间是？", answer: "每日约 08:00 - 15:00(部分资料显示可至17:00)。但由于位于海军基地内部,最终放行时间受军事管制影响,可能随时调整。建议14:00前到达,并提前确认。" },
+      { question: "进入 La Chocolatera 需要什么证件？", answer: "所有游客必须通过海军基地检查站,100%查验护照(外国游客)或厄瓜多尔身份证件(本国公民)。无证件者会被拒绝进入。请将证件随身携带,不要留在酒店。" },
+      { question: "La Chocolatera 可以游泳吗？", answer: "❌ 严禁下海游泳！La Chocolatera 是礁石悬崖海岸,暗流极其湍急危险,已发生多起溺亡事故。这里是观赏海浪和海狮的地方,不是沙滩游泳浴场。如需游泳,请前往附近的 Punta Carnero 海滩。" },
+      { question: "La Chocolatera 名字的由来是什么？", answer: "名字来源于此处独特的自然现象:两大洋流(洪堡寒流与赤道暖流)在此交汇,加上猛烈的海浪拍击礁石、卷起海底泥沙,使海水呈现出如同沸腾巧克力般的深棕褐色,因此被称为'La Chocolatera'(巧克力壶)。" },
+      { question: "La Chocolatera 适合冲浪吗？", answer: "此处海浪极其猛烈,仅适合有经验的专业冲浪者。对于初学者和普通游客,更适合站在安全的高处礁石上观赏巨浪拍岸的壮观景象,以及观察 La Lobería 的海狮。" },
+      { question: "观鲸的最佳季节是什么时候？", answer: "每年6月至9月是座头鲸沿厄瓜多尔海岸迁徙的季节。在 La Chocolatera 高处的礁石上,用望远镜有机会观测到远处的鲸鱼喷潮。这3个月也是海狮活动最为活跃的时期。" },
+      { question: "La Chocolatera 附近还有哪些值得一游的景点？", answer: "可以顺路参观:La Lobería(海狮栖息地,步行5分钟)、Punta Carnero 海滩(适合游泳,车程10分钟)、萨利纳斯海滨大道(Malecón de Salinas,完善的度假设施)。" }
     ]},
-    location: { title: "地图位置", address: "RX6Q+PX, Salinas, 厄瓜多尔", openMaps: "在 Google Maps 查看位置" },
-    footer: { callToAction: "作为海洋生态的守护者，请与我们一起尊重自然、保护海洋。", text: "© 2026 La Chocolatera 旅行指南 · 保留所有权利。\n本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。", made: "本网站是一个独立的第三方旅游资讯项目。为探索者而制", linksTitle: "相关链接", links: [
+    location: { title: "地图位置", address: "Base Naval de Salinas, Salinas, 厄瓜多尔\n(海军基地内部,需通过检查站)", openMaps: "在 Google Maps 查看位置" },
+    footer: { callToAction: "作为海洋生态的守护者,请与我们一起尊重自然、保护海洋。严禁下海游泳,注意安全。", text: "© 2026 La Chocolatera 旅行指南 · 保留所有权利。\n本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。", made: "本网站是一个独立的第三方旅游资讯项目。为探索者而制", linksTitle: "相关链接", links: [
       { name: "厄瓜多尔国家旅游局", url: "https://ecuador.travel/" },
       { name: "厄瓜多尔环境、水和生态转型部", url: "https://www.ambienteyenergia.gob.ec/" },
       { name: "厄瓜多尔旅游部", url: "https://ecuador.travel/" },
@@ -102,76 +112,87 @@ export const translations: Record<Locale, Translations> = {
       { name: "厄瓜多尔综合旅游指南", url: "https://www.buentrip.app/atractivo-turistico/la-chocolatera/" }
     ]}
   },
+  // ===== ENGLISH =====
   en: {
     nav: { about: "Overview", visiting: "Visit Guide", transportation: "Getting There", tips: "Travel Tips", gallery: "Photo Gallery", reviews: "Reviews", faq: "FAQ", location: "Location" },
-    hero: { tagline: "A Natural Wonder and Surfing Paradise on Ecuador's Coastline", title: "La Chocolatera", subtitle: "Salinas, Santa Elena, Ecuador", cta: "Explore the Coast" },
+    hero: { tagline: "Westernmost Point of Mainland Ecuador · Raw Power of the Pacific", title: "La Chocolatera", subtitle: "Salinas, Santa Elena, Ecuador · Inside Naval Base", cta: "Explore the Chocolate Sea" },
     rating: { reviews: "reviews", source: "Google Reviews" },
     about: {
-      title: "Overview",
-      p1: "La Chocolatera is located at the westernmost tip of Salinas, in the province of Santa Elena, Ecuador. It is a famous tourist destination at the continental extreme of mainland Ecuador. Here you will find magnificent Pacific Ocean views, golden sandy beaches, and excellent wave conditions, making it one of Ecuador's most popular seaside resorts.\n\nThe name 'La Chocolatera' originated from the historical cacao plantations in this area (Chocolate means chocolate in Spanish). Today, it has become a comprehensive coastal destination that combines surfing, beach leisure, whale watching, and sunset viewing. The clean waters, consistent waves, and well-developed tourist facilities attract visitors from all over the world.",
-      p2: "La Chocolatera's beach stretches for several kilometers, with fine sand and crystal-clear water. It is a paradise for surfing enthusiasts, with waves suitable for surfers of all levels year-round. In addition to water sports, visitors can enjoy sunbathing on the beach, horseback riding, or admire the magnificent Pacific sunset from the coastal cliff trails. It is recommended to arrange your visit in the early morning or late afternoon to avoid the intense midday sun and to catch the most beautiful sunrise and sunset views.",
-      highlights: { title: "Quick Facts", items: ["Location: Salinas, Santa Elena Province, Ecuador", "Famous beach at mainland Ecuador's westernmost point", "Opening Hours: 08:00–15:00", "Featured Activities: Surfing, beach leisure, whale watching, sunset viewing", "Facilities: Surf schools, restaurants, parking"] },
+      title: "Overview: The Westernmost Point of Mainland Ecuador",
+      p1: "La Chocolatera is located at the westernmost point of mainland Ecuador (Punta Santa Elena), within the Salinas Naval Base (Base Naval de Salinas). This is not a traditional golden-sand beach - it is a dramatic rocky cliff coastline where two major ocean currents (the cold Humboldt Current and the warm Equatorial Current) collide, violently crashing against the rocks and stirring up seafloor sediment, turning the water a distinctive dark brown color resembling boiling chocolate. Hence the name 'La Chocolatera' (the chocolate pot).\n\nThe waves here are extremely powerful and the rip currents are dangerous - swimming is strictly prohibited. However, the spectacular wave action, the unique 'chocolate sea' phenomenon, and the adjacent sea lion colony (La Lobería) make this one of Ecuador's most distinctive coastal attractions.",
+      p2: "Access to La Chocolatera requires passing through a military checkpoint at the naval base - all visitors must present a passport or ID card. There are surfing spots nearby (suitable only for experienced surfers), but the main viewing area is for observing the massive waves from the cliffs and enjoying the Pacific sunset. Since the seafront wind is extremely strong, a windbreaker is highly recommended. This is not a place for laying out beach towels - it is a raw, powerful natural spectacle.",
+      highlights: { title: "Quick Facts", items: ["Location: Westernmost point of mainland Ecuador, Salinas, Santa Elena Province", "Terrain: Rocky cliff coast - NOT a swimming beach. No swimming allowed.", "Name origin: Ocean currents stir up chocolate-colored water", "Required: Passport or ID (military checkpoint)", "Highlights: Massive waves, La Lobería sea lions, Pacific sunset"] },
       timeline: { title: "Development Timeline", events: [
-        { period: "Mid-20th Century: Early Development", description: "The La Chocolatera area began to be developed as an extended seaside leisure area of Salinas, initially mainly serving local residents for weekend recreation." },
-        { period: "1990s: Tourism Boom", description: "With the booming development of Ecuador's seaside tourism industry, La Chocolatera gradually became a popular surfing and seaside vacation destination for domestic and international tourists, thanks to its quality waves and beach conditions." },
-        { period: "2000s - Present: Infrastructure Improvement", description: "The local government continues to invest in improving tourism infrastructure, including parking lots, coastal promenades, surf schools, restaurants, and security facilities, making La Chocolatera a safe and convenient family-friendly seaside resort area." }
+        { period: "Pre-20th Century: Naval Base Territory", description: "The area where La Chocolatera is located has long been under the jurisdiction of the Ecuadorian Naval Base (Base Naval de Salinas) and was not open to the public." },
+        { period: "Late 20th Century: Limited Public Access", description: "With the growth of tourism in Salinas, the naval base opened this area under restricted conditions, but entry still requires passing through a military checkpoint." },
+        { period: "21st Century – Present: Iconic Destination", description: "With its unique natural phenomenon and the 'westernmost point' geographic label, La Chocolatera has become one of Ecuador's most iconic coastal attractions, drawing surfers and nature enthusiasts." }
       ]},
-      management: { title: "Management and Official Authorities", content: "La Chocolatera beach is jointly managed and maintained by the Salinas Municipal Government and the Santa Elena Provincial Government. As a free public beach open to the public, the government is committed to maintaining its cleanliness, safety, and good tourism environment." }
+      management: { title: "Management & Access Requirements", content: "La Chocolatera is located inside an active Ecuadorian Naval Base. All visitors must pass through a military checkpoint and present a passport or Ecuadorian ID card. The site is free to visit, but access is subject to naval base regulations and opening hours may change without notice." }
     },
     history: {
-      title: "Historical Background & Cultural Memory",
-      intro: "The name 'La Chocolatera' carries the historical memory of this land. During the Spanish colonial period and for some time afterward, this area was part of cacao (chocolate ingredient) plantations. The name 'Chocolatera' comes from this history, meaning 'chocolate maker' or 'chocolate production place'. Although cacao cultivation has ceased today, this poetic name has been preserved and has become synonymous with this beautiful coastline.\n\nOver time, this area has gradually transformed from agricultural land into one of Ecuador's most important seaside tourism destinations. Salinas, as the main tourist city of Santa Elena Province, has gained favor for its western end (La Chocolatera) due to its unspoiled natural beauty and excellent wave conditions.",
+      title: "Name Origin & Natural Legend: The Chocolate Sea",
+      intro: "The poetic name 'La Chocolatera' comes from a unique natural phenomenon at this location, not from any historical chocolate-related industry.\n\nAt Punta Santa Elena, the westernmost point of mainland Ecuador, two world-famous ocean currents violently collide: the cold Humboldt Current from Antarctica meets the warm Equatorial Current. Combined with strong seafront winds, this creates extremely powerful waves. The waves crash violently against the rocky coast, stirring up seafloor sediment and turning the normally clear Pacific water into a distinctive, boiling dark-chocolate brown color.\n\nLocals named this place 'La Chocolatera' (meaning 'the chocolate pot' or 'the chocolate maker') to vividly describe this extraordinary seascape.",
       sections: [
-        { subtitle: "1. Origin of the Name: From Cacao Plantation to Tourist Resort", content: "The name 'La Chocolatera' directly translates to 'chocolate house' or 'chocolate production place'. Historically, the cacao beans in Ecuador's coastal areas were of excellent quality, and this area was once covered with cacao plantations. Although agricultural activities have ceased, the place name has been completely preserved as a witness to history.\n\nToday, when people come to La Chocolatera, although they no longer see cacao trees, the historical story behind the name adds a layer of cultural depth to this beach. While enjoying the sun and beach, visitors are also inadvertently touching the historical context of this land." },
-        { subtitle: "2. The Tourism Rise of Salinas", content: "Salinas is a coastal city in the province of Santa Elena, known for its beautiful beaches and complete tourism facilities. As one of Ecuador's most representative seaside resort cities, Salinas began to vigorously develop tourism in the late 20th century.\n\nLa Chocolatera is located at the westernmost tip of Salinas and is considered the most beautiful and most suitable surfing beach section of the city. With the continuous improvement of the city's tourism infrastructure, La Chocolatera has gradually become a beautiful business card for Salinas and even the entire Ecuadorian seaside tourism." }
+        { subtitle: "1. The Chocolate Sea: A Natural Wonder of Colliding Currents", content: "The core natural phenomenon of La Chocolatera is the chocolate-colored water. This is not pollution - it is the result of two major ocean currents colliding, plus violent wave action against the rocky coast.\n\nWhen massive waves crash into the rocky crevices, a natural blowhole effect can occur - seawater shoots up dramatically from between the rocks. For travelers who love natural wonders and geological phenomena, this is a living marine physics textbook on Ecuador's coastline." },
+        { subtitle: "2. The Westernmost Point of Mainland Ecuador", content: "La Chocolatera sits at Punta Santa Elena, the westernmost point of Ecuador's mainland territory. This 'geographic extreme' label gives it extremely high value for geographic exploration and travel bucket lists.\n\nStanding on the rocks at the continent's end, facing the vast Pacific Ocean, feeling the wild sea wind at the confluence of two ocean currents - this 'end of the world' experience is the most captivating charm of La Chocolatera." }
       ],
       buildings: {
-        title: "Surrounding Cultural Attractions",
+        title: "Nearby Attractions",
         items: [
-          "Museo de la Liga Cantonal de Santa Elena: Learn about the pre-Columbian history and culture of the region.",
-          "Museo Oceanográfico de Salinas: Showcases Ecuador's rich marine biodiversity.",
-          "Punta Carnero Beach: Another high-quality beach not far from La Chocolatera, famous for its clear waters and rich marine life."
+          "La Lobería (Sea Lion Colony): Adjacent to La Chocolatera, this rocky coast is home to a large colony of sea lions. Visitors can observe these marine mammals from a safe distance.",
+          "Punta Carnero Beach: About 10 minutes away by car, this is a relatively calm sandy beach suitable for swimming (a sharp contrast to La Chocolatera's dramatic cliffs).",
+          "Malecón de Salinas: Features complete tourist infrastructure, restaurants, and nightlife - the best place to experience Ecuador's coastal resort culture."
         ],
-        conclusion: "La Chocolatera is not just a beautiful beach, but also a microcosm of Ecuador's seaside culture. Here, you can feel the locals' love for the ocean and their life wisdom in perfectly combining natural beauty with tourism and leisure."
+        conclusion: "La Chocolatera is not a traditional 'sunbathing and swimming' beach resort. It is a place to witness the raw power of nature. Standing on the rocks, watching massive chocolate-brown waves crash violently against the cliffs, while sea lions lounge lazily on nearby rocks - this experience is one of the most unique memories of Ecuador's coast."
       }
     },
     ecology: {
-      title: "Ecology & Marine Environment",
+      title: "Marine Ecology: La Lobería Sea Lion Colony",
       sections: [
-        { subtitle: "Marine Ecology and Biodiversity", content: "The sea area of La Chocolatera is one of the important marine ecosystems along Ecuador's Pacific coast. The water here is clear, and the marine biodiversity is rich. During the appropriate season (usually June to September), visitors also have the opportunity to see humpback whales and dolphins offshore.\n\nThe rocky areas and tide pools around the beach are also excellent places to observe marine life. At low tide, you can see various shellfish, starfish, and small fish in the tide pools. The ecological environment here is relatively primitive, making it an ideal place for marine ecological education and ecotourism." },
-        { subtitle: "Coastal Protection and Sustainable Development", content: "As an important tourism destination in Ecuador, the protection of the ecological environment at La Chocolatera has attracted much attention. Local governments and communities are making efforts to take measures to protect the coastline from overdevelopment and pollution.\n\nWhile enjoying the beautiful beach scenery, visitors are also encouraged to participate in conservation actions, such as not leaving trash, not disturbing wildlife, and using environmentally friendly sunscreen. These measures help ensure that the natural beauty of La Chocolatera can be sustainably passed on to benefit future generations." }
+        { subtitle: "La Lobería: Home of the Sea Lions", content: "Adjacent to La Chocolatera, La Lobería is a rocky coastal area that hosts a large population of sea lions (Lobo marino) year-round. These massive marine mammals lounge lazily on the rocks to sunbathe, or swim agilely through the waves - a highlight that no visitor should miss.\n\nViewing the sea lions is free. Please observe quietly from a safe distance (at least 2 meters). Do not feed or disturb them." },
+        { subtitle: "Whale Watching Season & Marine Biodiversity", content: "From June to September each year, humpback whales (Yubarta) migrate along the Ecuadorian coast. With good luck and binoculars, you can spot distant whale spouts from the high cliffs of La Chocolatera.\n\nIn addition, the rocky tide pools here host various shellfish, starfish, and small marine creatures - an excellent outdoor classroom for children's marine nature education. Since this area is under naval base jurisdiction, the ecological environment remains relatively pristine." },
+        { subtitle: "The Marine Significance of Colliding Currents", content: "The Humboldt Current and Equatorial Current converge here, creating not only the unique 'chocolate sea' phenomenon but also supporting rich marine biodiversity. Cold-water and warm-water fish species intersect here, making this one of the most important marine observation points on Ecuador's Pacific coast.\n\nFor marine biology enthusiasts and nature photographers, La Chocolatera offers rare research and photography opportunities." }
       ]
     },
     visiting: {
-      title: "Visitor Information",
-      hours: { title: "Operating Hours", content: "Daily: 08:00 – 15:00", note: "Please confirm the latest opening hours through official channels before departure." },
-      price: { title: "Ticket Information", content: "Free admission, no reservation required", note: "Parking fee is about $2-3 USD, surf lessons and beach equipment rental require additional payment." },
-      duration: { title: "Recommended Duration & Climate", content: "Recommended visit duration: 3 - 6 hours", note: "Salinas has a tropical arid climate with high temperatures year-round (22-30°C). The dry season (May-December) is the best time to visit, and the wave conditions are most stable." },
-      animals: { title: "Marine Residents: Rich Pacific Ecosystem", content: "The sea area of La Chocolatera is home to rich marine life, including various tropical fish, sea turtles, dolphins, and the opportunity to see humpback whales during whale watching season. The rocky areas around the beach also have various shellfish and crustaceans." },
-      bring: { title: "Preparation", items: ["Waterproof high-SPF sunscreen", "Swimwear, beach towel, and sun hat", "Drinking water and snacks", "Surfboard or rental fee (also available on-site)", "Camera or smartphone (to capture the magnificent sunset)", "Light sandals or flip-flops"] }
+      title: "Visitor Guide & Naval Base Access",
+      hours: { title: "Opening & Access Hours", content: "Daily: approximately 08:00 – 15:00\n(Some sources say up to 17:00, but subject to naval base control)", note: "⚠️ IMPORTANT: La Chocolatera is inside a naval base. Final access time is subject to military control and may change without notice. Arrive before 14:00 and bring ID." },
+      price: { title: "Cost", content: "Free entry, no reservation required", note: "Parking fee approx. $2-3 USD. Surfers: waves are extremely dangerous here. Only for experienced surfers - beginners are strongly advised not to enter the water." },
+      duration: { title: "Recommended Duration & Warnings", content: "Recommended: 2 - 4 hours", note: "Seafront wind is extremely strong; temperature is 3-5°C lower than Salinas city center. 🚫 SWIMMING STRICTLY PROHIBITED - rip currents are extremely dangerous. View from safe cliff areas only." },
+      animals: { title: "Wildlife: Sea Lions & Marine Life", content: "The most famous residents of La Chocolatera are the sea lions at adjacent La Lobería. Humpback whales can be spotted (with binoculars) during migration season (June-Sept). Tide pools contain various shellfish and starfish. This is NOT a swimming beach - it is a wild coast observation area." },
+      bring: { title: "Essential Items", items: ["Passport or ID card (MANDATORY for military checkpoint)", "Windbreaker or warm jacket (extremely windy, cooler than town)", "Binoculars (for observing sea lions and distant whales)", "Waterproof high-SPF sunscreen (equatorial UV is still strong)", "Drinking water (no shops on-site)", "Camera (for waves and sea lions)", "Sturdy non-slip shoes (rocks are wet and slippery - flip-flops strictly NOT recommended)"] }
     },
     transportation: {
       title: "Getting There",
-      airport: { title: "From Guayaquil Airport", content: "About 140 km from Guayaquil International Airport (GYE), approximately a 2 - 2.5 hour drive.", options: [
-        { name: "Car Rental (Most Flexible)", price: "$40 - $70 USD/day", time: "About 2-2.5 hours", steps: ["After renting a car at the airport, drive west on the E40 highway", "After passing through Santa Elena, continue to Salinas", "Follow the signs to La Chocolatera"] },
-        { name: "Airport Bus + Taxi (Economical)", price: "$10 - $20 USD", time: "About 3 hours", steps: ["Take a long-distance bus from the airport to Salinas", "After arriving in Salinas, transfer to a taxi to La Chocolatera", "The trip takes about 15 minutes"] }
+      airport: { title: "From Guayaquil Airport", content: "About 140 km from Guayaquil International Airport (GYE), approx. 2 - 2.5 hour drive.", options: [
+        { name: "Car Rental (Most Flexible)", price: "$40 - $70 USD/day", time: "About 2-2.5 hours", steps: ["Rent a car at the airport, drive west on E40 highway", "Follow signs to La Chocolatera in Salinas", "At the naval base checkpoint: all passengers must exit the vehicle and show passports/ID cards"] },
+        { name: "Airport Bus + Taxi (Economical)", price: "$10 - $20 USD", time: "About 3 hours", steps: ["Take a long-distance bus from the airport to Salinas", "Transfer to a taxi to La Chocolatera", "Taxi drivers are usually familiar with the naval checkpoint location"] }
       ]},
-      city: { title: "From Salinas Downtown", content: "From downtown Salinas, drive west along the coastal boulevard, and follow the signs to the La Chocolatera beach entrance.", steps: ["Navigation: Enter La Chocolatera Salinas Ecuador in Google Maps", "Parking: The beach has a dedicated parking lot, parking fee is about $2-3 USD"] },
-      selfDrive: { title: "Traveling from Other Cities", content: "From Quito or Cuenca, arrive in Guayaquil first, then travel along the E40 highway to Salinas.", steps: ["From Quito: Take a domestic flight to Guayaquil, then transfer to a car (about 2.5 hours)", "From Cuenca: Take a long-distance bus to Guayaquil, then transfer to a car (about 3 hours)"] }
+      city: { title: "From Salinas Downtown", content: "From downtown Salinas, drive west along the coastal boulevard for about 5 km to reach the naval base checkpoint.", steps: ["Navigation: Enter La Chocolatera Salinas Ecuador in Google Maps", "Checkpoint: ALL passengers must exit and show passports/ID cards to enter", "Parking: After passing the checkpoint, there is a dedicated parking lot, approx. $2-3 USD"] },
+      selfDrive: { title: "From Other Cities", content: "From Quito or Cuenca, arrive in Guayaquil first, then travel along the E40 highway to Salinas.", steps: ["From Quito: Take a domestic flight to Guayaquil, then transfer to a car (about 2.5 hours)", "From Cuenca: Take a long-distance bus to Guayaquil, then transfer to a car (about 3 hours)"] }
     },
-    tips: { title: "Travel Tips", items: ["Best Time to Visit: Early morning 08:00 - 11:00 or evening 15:00 - sunset", "Surfer's Paradise: Year-round waves suitable for all levels", "Magnificent Sunset: Pacific sunset at La Chocolatera is world-class", "Sun Protection: UV radiation at the equator is very strong", "Respect Local Culture: Keep the beach clean, do not disturb wildlife"] },
+    tips: { title: "Travel Tips & Safety Warnings", items: [
+      "🚫 NO SWIMMING: Rip currents are extremely dangerous. Multiple drownings have occurred here.",
+      "MANDATORY ID: Passport/ID card is 100% checked at the naval checkpoint - no exceptions",
+      "Wind protection: Extremely windy even in dry season - bring a windbreaker",
+      "Best viewing time: Early morning (calmer winds) or late afternoon for sunset (must leave by 15:00-17:00)",
+      "Wear non-slip shoes: Rocks are wet and slippery - flip-flops and bare feet are dangerous",
+      "Sea lion viewing: Keep quiet, maintain at least 2m distance, do NOT feed",
+      "Binoculars are key: For spotting sea lions and distant whale spouts"
+    ] },
     gallery: { title: "Photo Gallery", viewMore: "View More Photos on Google Maps" },
     reviews: { title: "Visitor Reviews", subtitle: "Real reviews from Google Maps", viewMore: "View More Reviews on Google Maps" },
     faq: { title: "Frequently Asked Questions", subtitle: "Learn more about La Chocolatera", items: [
-      { question: "What are the opening hours of La Chocolatera?", answer: "Daily 08:00 - 15:00. It is recommended to confirm the latest opening hours through official channels before departure." },
-      { question: "Is there an entrance fee for La Chocolatera?", answer: "Beach access is free, no reservation required. However, parking fee is about $2-3 USD, and surf lessons and equipment rental require additional payment." },
-      { question: "Is La Chocolatera suitable for families?", answer: "Very suitable! There are gentle sandy beaches and relatively safe swimming areas, very suitable for family outings. However, please pay attention to waves and tide conditions." },
-      { question: "Is La Chocolatera good for surfing?", answer: "Very suitable! La Chocolatera is one of the most popular surfing destinations in Ecuador, with consistent waves year-round suitable for all levels from beginners to professional surfers." },
-      { question: "What is the best season to visit?", answer: "The dry season (May to December) is the best time to visit, when the weather is sunny and wave conditions are stable. Whale watching season (June to September) also offers the opportunity to see humpback whales." },
-      { question: "What other attractions are worth visiting nearby?", answer: "You can visit the Salinas Malecón, Punta Carnero Beach, and the Santa Elena Peninsula Archaeological Museum, etc." }
+      { question: "What are the opening hours of La Chocolatera?", answer: "Daily approx. 08:00 - 15:00 (some sources say up to 17:00). However, since it is inside a naval base, final access time is subject to military control and may change without notice. Arrive before 14:00 and check in advance." },
+      { question: "What documents are required to enter La Chocolatera?", answer: "All visitors must pass through the naval base checkpoint. Passports (foreign visitors) or Ecuadorian ID cards (citizens) are 100% checked. No ID = no entry. Always carry your documents with you - do NOT leave them at the hotel." },
+      { question: "Can you swim at La Chocolatera?", answer: "❌ NO. Swimming is strictly prohibited. La Chocolatera is a rocky cliff coast with extremely dangerous rip currents. Multiple drowning incidents have occurred. This is a wave-viewing and sea lion observation area, NOT a swimming beach. For swimming, go to nearby Punta Carnero Beach." },
+      { question: "What is the origin of the name 'La Chocolatera'?", answer: "The name comes from the unique natural phenomenon here: two ocean currents (Humboldt and Equatorial) collide, and violent waves crash against rocks, stirring up seafloor sediment and turning the water a dark chocolate brown color - hence 'La Chocolatera' (the chocolate pot)." },
+      { question: "Is La Chocolatera good for surfing?", answer: "The waves here are extremely powerful and recommended ONLY for experienced professional surfers. For beginners and casual visitors, it is better to observe the massive waves from the safety of the high cliffs, and watch the sea lions at La Lobería." },
+      { question: "When is the best season for whale watching?", answer: "June to September is the humpback whale migration season along the Ecuadorian coast. From the high cliffs of La Chocolatera, you may be able to spot distant whale spouts with binoculars. These 3 months are also when sea lion activity is most vibrant." },
+      { question: "What other attractions are worth visiting near La Chocolatera?", answer: "You can also visit: La Lobería (sea lion colony, 5-minute walk), Punta Carnero Beach (swimming-friendly, 10 minutes by car), Malecón de Salinas (complete resort amenities)." }
     ]},
-    location: { title: "Map Location", address: "RX6Q+PX, Salinas, Ecuador", openMaps: "View Location on Google Maps" },
-    footer: { callToAction: "As guardians of the marine ecosystem, please join us in respecting nature and protecting the ocean.", text: "© 2026 La Chocolatera Travel Guide · All rights reserved.\nThis website is an independent third-party travel information project. We are not affiliated with the local government or any other official authorities.", made: "This website is an independent third-party travel information project. Made for explorers", linksTitle: "Related Links", links: [
+    location: { title: "Map Location", address: "Base Naval de Salinas, Salinas, Ecuador\n(Inside naval base - military checkpoint required)", openMaps: "View Location on Google Maps" },
+    footer: { callToAction: "As guardians of the marine ecosystem, please join us in respecting nature and protecting the ocean. No swimming. Stay safe.", text: "© 2026 La Chocolatera Travel Guide · All rights reserved.\nThis website is an independent third-party travel information project. We are not affiliated with the local government or any official authority.", made: "This website is an independent third-party travel information project. Made for explorers.", linksTitle: "Related Links", links: [
       { name: "Ecuador National Tourism Board", url: "https://ecuador.travel/" },
       { name: "Ministry of Environment, Water and Ecological Transition", url: "https://www.ambienteyenergia.gob.ec/" },
       { name: "Ministry of Tourism", url: "https://ecuador.travel/" },
@@ -179,76 +200,87 @@ export const translations: Record<Locale, Translations> = {
       { name: "Ecuador Comprehensive Travel Guide", url: "https://www.buentrip.app/atractivo-turistico/la-chocolatera/" }
     ]}
   },
+  // ===== SPANISH =====
   es: {
     nav: { about: "Descripción General", visiting: "Guía de Visita", transportation: "Cómo Llegar", tips: "Consejos", gallery: "Galería de Fotos", reviews: "Reseñas", faq: "Preguntas Frecuentes", location: "Ubicación" },
-    hero: { tagline: "Una Maravilla Natural y Paraíso del Surf en la Costa de Ecuador", title: "La Chocolatera", subtitle: "Salinas, Santa Elena, Ecuador", cta: "Explora la Costa" },
+    hero: { tagline: "Punto más occidental del Ecuador continental · Maravilla natural del Pacífico", title: "La Chocolatera", subtitle: "Salinas, Santa Elena, Ecuador · Dentro de la Base Naval", cta: "Explora el Mar Chocolate" },
     rating: { reviews: "reseñas", source: "Google Reviews" },
     about: {
-      title: "Descripción General",
-      p1: "La Chocolatera está ubicada en el extremo más occidental de Salinas, en la provincia de Santa Elena, Ecuador. Es un famoso destino turístico en el extremo continental de Ecuador continental. Aquí encontrará magníficas vistas del Océano Pacífico, playas de arena dorada y excelentes condiciones de oleaje, lo que la convierte en uno de los complejos balnearios más populares de Ecuador.\n\nEl nombre 'La Chocolatera' se originó a partir de las históricas plantaciones de cacao en esta área. Hoy en día, se ha convertido en un destino costero integral que combina surf, recreación en la playa, avistamiento de ballenas y observación del atardecer. Las aguas limpias, las olas constantes y las bien desarrolladas instalaciones turísticas atraen visitantes de todo el mundo.",
-      p2: "La playa de La Chocolatera se extiende por varios kilómetros, con arena fina y aguas cristalinas. Es un paraíso para los entusiastas del surf, con olas adecuadas para surfistas de todos los niveles durante todo el año. Además de los deportes acuáticos, los visitantes pueden disfrutar de tomar el sol en la playa, paseos a caballo o admirar el magnífico atardecer del Pacífico desde los senderos de los acantilados costeros. Se recomienda organizar su visita en la madrugada o tarde para evitar el intenso sol del mediodía y contemplar las más bellas vistas del amanecer y atardecer.",
-      highlights: { title: "Datos Rápidos", items: ["Ubicación: Salinas, Provincia de Santa Elena, Ecuador", "Famosa playa en el punto más occidental de Ecuador continental", "Horario de Apertura: 08:00–15:00", "Actividades Destacadas: Surf, recreación en playa, avistamiento de ballenas, observación del atardecer", "Instalaciones: Escuelas de surf, restaurantes, estacionamiento"] },
+      title: "Descripción General: El Punto Más Occidental del Ecuador Continental",
+      p1: "La Chocolatera se encuentra en el punto más occidental del territorio continental de Ecuador (Punta Santa Elena), dentro de la Base Naval de Salinas. Este no es una playa tradicional de arena dorada - es una costa dramática de acantilados rocosos donde dos corrientes oceánicas principales (la fría Corriente de Humboldt y la cálida Corriente Ecuatorial) colisionan, golpeando violentamente contra las rocas y removiendo el sedimento del fondo marino, dándole al agua un distintivo color marrón oscuro similar al chocolate hirviendo. De ahí el nombre 'La Chocolatera'.\n\nLas olas aquí son extremadamente poderosas y las corrientes de resaca son peligrosas - está estrictamente prohibido bañarse. Sin embargo, el espectácuro de las olas masivas, el único fenómeno del 'mar chocolate' y la colonia de lobos marinos adyacente (La Lobería) hacen de este uno de los atractivos costeros más distintivos de Ecuador.",
+      p2: "El acceso a La Chocolatera requiere pasar por un punto de control militar de la base naval - todos los visitantes deben presentar pasaporte o cédula de identidad. Hay puntos de surf cercanos (solo adecuados para surfistas experientes), pero el área principal de visualización es para observar las masivas olas desde los acantilados y disfrutar de la puesta de sol del Pacífico. Dado que el viento costero es extremadamente fuerte, se recomienda encarecidamente llevar una chaqueta cortavientos. Este no es un lugar para extender toallas de playa - es un espectácuro natural crudo y poderoso.",
+      highlights: { title: "Datos Rápidos", items: ["Ubicación: Punto más occidental de Ecuador continental, Salinas, Provincia de Santa Elena", "Terreno: Acantilados rocosos - NO es playa para bañarse. Prohibido bañarse.", "Origen del nombre: Corrientes oceánicas remueven el agua con color chocolate", "Requerido: Pasaporte o cédula (control militar)", "Destacados: Olas masivas, lobos marinos de La Lobería, puesta de sol del Pacífico"] },
       timeline: { title: "Línea de Tiempo", events: [
-        { period: "Mediados del Siglo XX: Desarrollo Temprano", description: "El área de La Chocolatera comenzó a desarrollarse como una zona de esparcimiento balneario extendida de Salinas, sirviendo inicialmente principalmente a los residentes locales para recreación de fin de semana." },
-        { period: "Años 1990: Auge Turístico", description: "Con el floreciente desarrollo de la industria turística balnearia de Ecuador, La Chocolatera se convirtió gradualmente en un destino popular de surf y vacaciones balnearias para turistas nacionales e internacionales, gracias a sus olas de calidad y condiciones de playa." },
-        { period: "Años 2000 - Actualidad: Mejora de Infraestructura", description: "El gobierno local continúa invirtiendo en la mejora de la infraestructura turística, incluyendo estacionamientos, malecón costero, escuelas de surf, restaurantes e instalaciones de seguridad, haciendo de La Chocolatera un área balnearia familiar segura y conveniente." }
+        { period: "Pre-siglo XX: Territorio de Base Naval", description: "El área donde se encuentra La Chocolatera ha estado bajo la jurisdicción de la Base Naval de Salinas durante mucho tiempo y no estaba abierta al público." },
+        { period: "Finales del siglo XX: Acceso Público Limitado", description: "Con el crecimiento del turismo en Salinas, la base naval abrió esta área bajo condiciones restringidas, pero el acceso aún requiere pasar por un punto de control militar." },
+        { period: "Siglo XXI – Actualidad: Destino Icónico", description: "Con su único fenómeno natural y la etiqueta de 'punto más occidental', La Chocolatera se ha convertido en uno de los atractivos costeros más icónicos de Ecuador, atrayendo a surfistas y entusiastas de la naturaleza." }
       ]},
-      management: { title: "Gestión y Autoridades Oficiales", content: "La playa de La Chocolatera es gestionada y mantenida conjuntamente por el Gobierno Municipal de Salinas y el Gobierno Provincial de Santa Elena. Como una playa pública gratuita abierta al público, el gobierno se compromete a mantener su limpieza, seguridad y buen ambiente turístico." }
+      management: { title: "Gestión y Requisitos de Acceso", content: "La Chocolatera se encuentra dentro de una Base Naval activa. Todos los visitantes deben pasar por un punto de control militar y presentar pasaporte o cédula ecuatoriana. La entrada es gratuita, pero el acceso está sujeto a las regulaciones de la base naval y el horario puede cambiar sin previo aviso." }
     },
     history: {
-      title: "Antecedentes Históricos y Memoria Cultural",
-      intro: "El nombre 'La Chocolatera' lleva la memoria histórica de esta tierra. Durante el período colonial español y algún tiempo después, esta área fue parte de las plantaciones de cacao (ingrediente del chocolate). El nombre 'Chocolatera' proviene de esta historia, que significa 'fabricante de chocolate' o 'lugar de producción de chocolate'. Aunque el cultivo de cacao ha cesado hoy en día, este nombre poético se ha preservado y se ha convertido en sinónimo de este hermoso litoral.\n\nCon el paso del tiempo, esta área se ha transformado gradualmente de tierra agrícola en uno de los destinos turísticos balnearios más importantes de Ecuador. Salinas, como la principal ciudad turística de la provincia de Santa Elena, ha ganado favor por su extremo occidental (La Chocolatera) debido a su belleza natural no explotada y excelentes condiciones de oleaje.",
+      title: "Origen del Nombre y Leyenda Natural: El Mar Chocolate",
+      intro: "El poético nombre 'La Chocolatera' proviene de un fenómeno natural único en este lugar, no de ninguna industria historica relacionada con el chocolate.\n\nEn Punta Santa Elena, el punto más occidental del territorio continental de Ecuador, dos corrientes oceánicas mundialmente famosas colisionan violentamente: la fría Corriente de Humboldt desde la Antártida se encuentra con la cálida Corriente Ecuatorial. Combinado con fuertes vientos costeros, esto crea olas extremadamente poderosas. Las olas golpean violentamente contra la costa rocosa, removiendo el sedimento del fondo marino y dándole al agua normalmente clara del Pacífico un distintivo color marrón oscuro hirviendo, similar al chocolate.\n\nLos locales nombraron este lugar 'La Chocolatera' (que significa 'la olla de chocolate' o 'el fabricante de chocolate') para describir vividamente este extraordinario paisaje marino.",
       sections: [
-        { subtitle: "1. Origen del Nombre: De Plantación de Cacao a Destino Turístico", content: "El nombre 'La Chocolatera' se traduce directamente como 'casa de chocolate' o 'lugar de producción de chocolate'. Históricamente, los granos de cacao en las áreas costeras de Ecuador eran de excelente calidad, y esta área estaba cubierta de plantaciones de cacao. Aunque las actividades agrícolas han cesado, el nombre del lugar se ha preservado completamente como testigo de la historia.\n\nHoy en día, cuando la gente viene a La Chocolatera, aunque ya no ve árboles de cacao, la historia histórica detrás del nombre agrega una capa de profundidad cultural a esta playa. Mientras disfrutan del sol y la playa, los visitantes también tocan inadvertidamente el contexto histórico de esta tierra." },
-        { subtitle: "2. El Auge Turístico de Salinas", content: "Salinas es una ciudad costera en la provincia de Santa Elena, conocida por sus hermosas playas e instalaciones turísticas completas. Como una de las ciudades balnearias más representativas de Ecuador, Salinas comenzó a desarrollar vigorosamente el turismo a finales del siglo XX.\n\nLa Chocolatera está ubicada en el extremo más occidental de Salinas y se considera la sección de playa más hermosa y más adecuada para el surf de la ciudad. Con la mejora continua de la infraestructura turística de la ciudad, La Chocolatera se ha convertido gradualmente en una hermosa tarjeta de presentación para el turismo balneario de Salinas e incluso de todo Ecuador." }
+        { subtitle: "1. El Mar Chocolate: Un Maravilla Natural de Corrientes que Colisionan", content: "El fenómeno natural central de La Chocolatera es el agua de color chocolate. Esto no es contaminación - es el resultado de dos corrientes oceánicas principales colisionando, más la violenta acción de las olas contra la costa rocosa.\n\nCuando las masivas olas golpean las grietas rocosas, puede ocurrir un efecto de 'respiradero' (blowhole) natural: el agua del mar se dispara dramáticamente entre las rocas. Para los viajeros que aman los fenómenos naturales y geológicos, este es un libro de texto viviente de física marina en la costa de Ecuador." },
+        { subtitle: "2. El Punto más Occidental de Ecuador Continental", content: "La Chocolatera se encuentra en Punta Santa Elena, el punto más occidental del territorio continental de Ecuador. Esta etiqueta de 'extremo geográfico' le da un valor extremadamente alto para la exploración geográfica y la lista de 'bucket list' de viajes.\n\nPararse en las rocas en el extremo del continente, mirando hacia el vasto Océano Pacífico, sintiendo el viento salvaje del mar en la confluencia de dos corrientes oceánicas - esta experiencia de 'fin del mundo' es el encanto más cautivador de La Chocolatera." }
       ],
       buildings: {
-        title: "Atracciones Culturales Circundantes",
+        title: "Atracciones Cercanas",
         items: [
-          "Museo de la Liga Cantonal de Santa Elena: Conozca la historia y cultura precolombina de la región.",
-          "Museo Oceanográfico de Salinas: Muestra la rica biodiversidad marina de Ecuador.",
-          "Playa Punta Carnero: Otra playa de alta calidad no lejos de La Chocolatera, famosa por sus aguas claras y rica vida marina."
+          "La Lobería (Colonia de Lobos Marinos): Adyacente a La Chocolatera, esta costa rocosa es hogar de una gran colonia de lobos marinos durante todo el año. Los visitantes pueden observar estos mamíferos marinos desde una distancia segura.",
+          "Playa Punta Carnero: A unos 10 minutos en automóvil, esta es una playa de arena relativamente tranquila adecuada para bañarse (un contraste agudo con los dramáticos acantilados de La Chocolatera).",
+          "Malecón de Salinas: Cuenta con infraestructura turística completa, restaurantes y vida nocturna - el mejor lugar para experimentar la cultura de balneario de la costa ecuatoriana."
         ],
-        conclusion: "La Chocolatera no es solo una playa hermosa, sino también un microcosmos de la cultura balnearia de Ecuador. Aquí, puede sentir el amor de los locales por el océano y su sabiduría de vida al combinar perfectamente la belleza natural con el turismo y el ocio."
+        conclusion: "La Chocolatera no es un complejo balneario tradicional de 'tomas de sol y baño'. Es un lugar para presenciar el poder crudo de la naturaleza. Pararse en las rocas, mirando las masivas olas de color chocolate golpear violentamente contra los acantilados, mientras los lobos marinos descansan perezosamente en las rocas cercanas - esta experiencia es uno de los recuerdos más únicos de la costa de Ecuador."
       }
     },
     ecology: {
-      title: "Ecología y Ambiente Marino",
+      title: "Ecología Marina y Vida Silvestre",
       sections: [
-        { subtitle: "Ecología Marina y Biodiversidad", content: "El área marina de La Chocolatera es uno de los importantes ecosistemas marinos a lo largo de la costa del Pacífico de Ecuador. El agua aquí es clara, y la biodiversidad marina es rica. Durante la temporada apropiada (generalmente de junio a septiembre), los visitantes también tienen la oportunidad de ver ballenas jorobadas y delfines en alta mar.\n\nLas áreas rocosas y los charcos de marea alrededor de la playa también son excelentes lugares para observar la vida marina. En marea baja, puede ver varios mariscos, estrellas de mar y peces pequeños en los charcos de marea. El ambiente ecológico aquí es relativamente prístino, lo que lo convierte en un lugar ideal para la educación ecológica marina y el ecoturismo." },
-        { subtitle: "Protección Costera y Desarrollo Sostenible", content: "Como un destino turístico importante en Ecuador, la protección del ambiente ecológico en La Chocolatera ha atraído mucha atención. Los gobiernos locales y las comunidades se están esforzando en tomar medidas para proteger la línea costera del sobre-desarrollo y la contaminación.\n\nMientras disfrutan de la hermosa vista de la playa, también se alienta a los visitantes a participar en acciones de conservación, como no dejar basura, no molestar a la vida silvestre y usar protector solar ecológico. Estas medidas ayudan a asegurar que la belleza natural de La Chocolatera pueda pasarse de manera sostenible para beneficiar a las generaciones futuras." }
+        { subtitle: "La Lobería: Hogar de los Lobos Marinos", content: "Adyacente a La Chocolatera, La Lobería es un área costera rocosa que alberga una gran población de lobos marinos (Lobo marino) durante todo el año. Estos enormes mamíferos marinos descansan perezosamente en las rocas tomando el sol, o nadan ágilmente a través de las olas - un destacado que ningún visitante debe perderse.\n\nObservar los lobos marinos es gratuito. Por favor observe en silencio desde una distancia segura (al menos 2 metros). No alimente ni moleste a los animales." },
+        { subtitle: "Temporada de Avistamiento de Ballenas y Biodiversidad Marina", content: "De junio a septiembre de cada año, las ballenas jorobadas (Yubarta) migran a lo largo de la costa ecuatoriana. Con suerte y binoculares, puede divisar los chorros de las ballenas distantes desde los altos acantilados de La Chocolatera.\n\nAdemás, las pozas de marea rocosas aquí albergan varios mariscos, estrellas de mar y pequeños seres marinos - un excelente aula al aire libre para la educación natural marina de los niños. Dado que esta área está bajo jurisdicción de la base naval, el ambiente ecológico permanece relativamente prístino." },
+        { subtitle: "El Significado Marino de las Corrientes que Colisionan", content: "La Corriente de Humboldt y la Corriente Ecuatorial convergen aquí, creando no solo el único fenómeno del 'mar chocolate', sino también soportando rica biodiversidad marina. Las especies de peces de agua fría y cálida se intersectan aquí, haciendo de este uno de los puntos de observación marina más importantes de la costa del Pacífico de Ecuador.\n\nPara los entusiastas de la biología marina y los fotógrafos de naturaleza, La Chocolatera ofrece raras oportunidades de investigación y fotografía." }
       ]
     },
     visiting: {
-      title: "Información para Visitantes",
-      hours: { title: "Horario de Operación", content: "Diario: 08:00 – 15:00", note: "Por favor confirme los últimos horarios de apertura a través de canales oficiales antes de la partida." },
-      price: { title: "Información de Boletos", content: "Entrada gratuita, sin necesidad de reserva", note: "El costo de estacionamiento es de aproximadamente $2-3 USD, las lecciones de surf y el alquiler de equipo de playa requieren pago adicional." },
-      duration: { title: "Duración Recomendada y Clima", content: "Duración recomendada: 3 - 6 horas", note: "Salinas tiene un clima tropical árido con temperaturas altas durante todo el año (22-30°C). La temporada seca (mayo-diciembre) es el mejor momento para visitar, y las condiciones de oleaje son más estables." },
-      animals: { title: "Residentes Marinos", content: "El área marina de La Chocolatera es el hogar de rica vida marina, incluyendo varios peces tropicales, tortugas marinas, delfines, y la oportunidad de ver ballenas jorobadas durante la temporada de avistamiento. Las áreas rocosas alrededor de la playa también tienen varios mariscos y crustáceos." },
-      bring: { title: "Preparación", items: ["Protector solar impermeable de alto FPS", "Traje de baño, toalla de playa y sombrero", "Agua potable y bocadillos", "Tabla de surf o tarifa de alquiler (también disponible en el sitio)", "Cámara o teléfono inteligente (para capturar el magnífico atardecer)", "Sandalias ligeras o chanclas"] }
+      title: "Guía de Visita y Acceso a la Base Naval",
+      hours: { title: "Horario de Apertura y Acceso", content: "Diario: aproximadamente 08:00 – 15:00\n(Algunas fuentes dicen hasta las 17:00, pero sujeto a control de la base naval)", note: "⚠️ IMPORTANTE: La Chocolatera está dentro de una base naval. La hora final de acceso está sujeta a control militar y puede cambiar sin previo aviso. Llegue antes de las 14:00 y traiga identificación." },
+      price: { title: "Costo", content: "Entrada gratuita, no se requiere reserva", note: "Estacionamiento aproximadamente $2-3 USD. Surfistas: las olas son extremadamente peligrosas. Solo para surfistas experientes - los principiantes están fuertemente aconsejados a no entrar al agua." },
+      duration: { title: "Duración Recomendada y Advertencias", content: "Recomendado: 2 - 4 horas", note: "El viento costero es extremadamente fuerte; la temperatura es 3-5°C más baja que el centro de Salinas. 🚫 PROHIBIDO BAÑARSE - las corrientes de resaca son extremadamente peligrosas. Solo observar desde áreas seguras de los acantilados." },
+      animals: { title: "Vida Silvestre: Lobos Marinos y Vida Marina", content: "Los residentes más famosos de La Chocolatera son los lobos marinos en la adyacente La Lobería. Las ballenas jorobadas pueden avistarse (con binoculares) durante la temporada de migración (junio-septiembre). Las pozas de marea contienen varios mariscos y estrellas de mar. Este NO es una playa para bañarse - es un área de observación de costa salvaje." },
+      bring: { title: "Artículos Esenciales", items: ["Pasaporte o cédula de identidad (OBLIGATORIO para el control militar)", "Chaquetón cortavientos o chaqueta abrigadora (extremadamente ventoso, más frío que el pueblo)", "Binoculares (para observar lobos marinos y ballenas distantes)", "Protector solar impermeable de alto FPS (la radiación ecuatorial sigue siendo fuerte)", "Agua potable (no hay tiendas en el sitio)", "Cámara (para las olas y los lobos marinos)", "Zapatos firmes antideslizantes (las rocas están mojadas y son resbaladizas - las chanclas están estrictamente desaconsejadas)"] }
     },
     transportation: {
       title: "Cómo Llegar",
       airport: { title: "Desde el Aeropuerto de Guayaquil", content: "A unos 140 km del Aeropuerto Internacional de Guayaquil (GYE), aproximadamente 2 - 2.5 horas en automóvil.", options: [
-        { name: "Alquiler de Automóvil (Más Flexible)", price: "$40 - $70 USD/día", time: "Alrededor de 2-2.5 horas", steps: ["Después de alquilar un automóvil en el aeropuerto, conduzca hacia el oeste en la carretera E40", "Después de pasar por Santa Elena, continúe hacia Salinas", "Siga los letreros a La Chocolatera"] },
-        { name: "Bus del Aeropuerto + Taxi (Económico)", price: "$10 - $20 USD", time: "Alrededor de 3 horas", steps: ["Tome un bus de larga distancia desde el aeropuerto a Salinas", "Después de llegar a Salinas, transfiérase a un taxi a La Chocolatera", "El viaje toma alrededor de 15 minutos"] }
+        { name: "Arrendamiento de Automóvil (Más Flexible)", price: "$40 - $70 USD/día", time: "Aproximadamente 2-2.5 horas", steps: ["Arrendar un automóvil en el aeropuerto, conducir hacia el oeste en la carretera E40", "Seguir los letreros a La Chocolatera en Salinas", "En el punto de control de la base naval: todos los pasajeros deben bajar y mostrar pasaportes/cédulas"] },
+        { name: "Autobús del Aeropuerto + Taxi (Económico)", price: "$10 - $20 USD", time: "Aproximadamente 3 horas", steps: ["Tomar un autobús de larga distancia del aeropuerto a Salinas", "Transbordar a un taxi a La Chocolatera", "Los conductores de taxi generalmente conocen la ubicación del punto de control naval"] }
       ]},
-      city: { title: "Desde el Centro de Salinas", content: "Desde el centro de Salinas, conduzca hacia el oeste a lo largo del bulevar costero y siga los letreros a la entrada de la playa de La Chocolatera.", steps: ["Navegación: Ingrese La Chocolatera Salinas Ecuador en Google Maps", "Estacionamiento: La playa tiene un estacionamiento dedicado, la tarifa de estacionamiento es de aproximadamente $2-3 USD"] },
-      selfDrive: { title: "Viajando desde Otras Ciudades", content: "Desde Quito o Cuenca, llegue a Guayaquil primero, luego viaje a lo largo de la carretera E40 a Salinas.", steps: ["Desde Quito: Tome un vuelo doméstico a Guayaquil, luego transFiéra a un automóvil (alrededor de 2.5 horas)", "Desde Cuenca: Tome un bus de larga distancia a Guayaquil, luego transFiéra a un automóvil (alrededor de 3 horas)"] }
+      city: { title: "Desde el Centro de Salinas", content: "Desde el centro de Salinas, conducir hacia el oeste a lo largo del bulevar costero por aproximadamente 5 km para llegar al punto de control de la base naval.", steps: ["Navegación: Ingresar La Chocolatera Salinas Ecuador en Google Maps", "Control: TODOS los pasajeros deben bajar y mostrar pasaportes/cédulas para entrar", "Estacionamiento: Después de pasar el control, hay un estacionamiento dedicado, aproximadamente $2-3 USD"] },
+      selfDrive: { title: "Desde Otras Ciudades", content: "Desde Quito o Cuenca, llegue a Guayaquil primero, luego viaje a lo largo de la carretera E40 a Salinas.", steps: ["Desde Quito: Tomar un vuelo doméstico a Guayaquil, luego transFiéra a un automóvil (aproximadamente 2.5 horas)", "Desde Cuenca: Tomar un autobús de larga distancia a Guayaquil, luego transFiéra a un automóvil (aproximadamente 3 horas)"] }
     },
-    tips: { title: "Consejos de Viaje", items: ["Mejor Momento para Visitar: Madrugada 08:00 - 11:00 o tarde 15:00 - atardecer", "Paraíso del Surfista: Olas todo el año adecuadas para todos los niveles", "Atardecer Magnífico: El atardecer del Pacífico en La Chocolatera es de clase mundial", "Protección Solar: La radiación UV en el ecuador es muy fuerte", "Respetar la Cultura Local: Mantenga la playa limpia, no moleste a la vida silvestre"] },
+    tips: { title: "Consejos de Viaje y Advertencias de Seguridad", items: [
+      "🚫 NO BAÑARSE: Las corrientes de resaca son extremadamente peligrosas. Se han producido múltiples ahogamientos aquí.",
+      "IDENTIFICACIÓN OBLIGATORIA: Pasaporte/cédula es 100% revisado en el control naval - sin excepción",
+      "Protección contra el viento: Extremadamente ventoso incluso en temporada seca - traiga chaquetón",
+      "Mejor momento para observar: Madrugada (vientos más calmos) o tarde tarde para la puesta de sol (debe salir a las 15:00-17:00)",
+      "Usar zapatos antideslizantes: Las rocas están mojadas y son resbaladizas - las chanclas y pies descalzos son peligrosos",
+      "Observación de lobos marinos: Mantener silencio, distancia mínima 2m, NO alimentar",
+      "Los binoculares son clave: Para observar lobos marinos y chorros de ballenas distantes"
+    ] },
     gallery: { title: "Galería de Fotos", viewMore: "Ver Más Fotos en Google Maps" },
     reviews: { title: "Reseñas de Visitantes", subtitle: "Reseñas reales de Google Maps", viewMore: "Ver Más Reseñas en Google Maps" },
     faq: { title: "Preguntas Frecuentes", subtitle: "Conozca más sobre La Chocolatera", items: [
-      { question: "¿Cuál es el horario de apertura de La Chocolatera?", answer: "Diario 08:00 - 15:00. Se recomienda confirmar los últimos horarios de apertura a través de canales oficiales antes de la partida." },
-      { question: "¿Hay una tarifa de entrada para La Chocolatera?", answer: "El acceso a la playa es gratuito, no se requiere reserva. Sin embargo, la tarifa de estacionamiento es de aproximadamente $2-3 USD, y las lecciones de surf y el alquiler de equipo requieren pago adicional." },
-      { question: "¿Es La Chocolatera adecuada para familias?", answer: "¡Muy adecuada! Hay playas de arena suave y áreas de natación relativamente seguras, muy adecuadas para salidas familiares. Sin embargo, preste atención a las olas y las condiciones de marea." },
-      { question: "¿Es buena La Chocolatera para el surf?", answer: "¡Muy adecuada! La Chocolatera es uno de los destinos de surf más populares de Ecuador, con olas constantes durante todo el año adecuadas para todos los niveles desde principiantes hasta surfistas profesionales." },
-      { question: "¿Cuál es la mejor temporada para visitar?", answer: "La temporada seca (mayo a diciembre) es el mejor momento para visitar, cuando el clima es soleado y las condiciones de las olas son estables. La temporada de avistamiento de ballenas (junio a septiembre) también ofrece la oportunidad de ver ballenas jorobadas." },
-      { question: "¿Qué otras atracciones vale la pena visitar cerca?", answer: "Puede visitar el Malecón de Salinas, la Playa Punta Carnero y el Museo Arqueológico de la Península de Santa Elena, etc." }
+      { question: "¿Cuál es el horario de apertura de La Chocolatera?", answer: "Diario aproximadamente 08:00 - 15:00 (algunas fuentes dicen hasta las 17:00). Sin embargo, como está dentro de una base naval, la hora final de acceso está sujeta a control militar y puede cambiar sin previo aviso. Llegue antes de las 14:00 y verifique de antemano." },
+      { question: "¿Qué documentos se requieren para entrar a La Chocolatera?", answer: "Todos los visitantes deben pasar por el punto de control de la base naval. Pasaportes (visitantes extranjeros) o cédulas ecuatorianas (ciudadanos) son 100% revisados. Sin identificación = no entrada. Siempre lleve sus documentos con usted - NO los deje en el hotel." },
+      { question: "¿Se puede bañar en La Chocolatera?", answer: "❌ NO. Está estrictamente prohibido bañarse. La Chocolatera es una costa de acantilados rocosos con corrientes de resaca extremadamente peligrosas. Se han producido múltiples incidentes de ahogamiento. Esta es un área para observar olas y lobos marinos, NO es una playa para bañarse. Para bañarse, vaya a la cercana Playa Punta Carnero." },
+      { question: "¿Cuál es el origen del nombre 'La Chocolatera'?", answer: "El nombre proviene del único fenómeno natural aquí: dos corrientes oceánicas (Humboldt y Ecuatorial) colisionan, y las violentas olas golpean contra las rocas, removiendo el sedimento y dándole al agua un color marrón oscuro similar al chocolate - de ahí 'La Chocolatera' (la olla de chocolate)." },
+      { question: "¿Es bueno La Chocolatera para el surf?", answer: "Las olas aquí son extremadamente poderosas y solo se recomiendan para surfistas experientes profesionales. Para principiantes y visitantes casuales, es mejor observar las masivas olas desde la seguridad de los altos acantilados, y mirar los lobos marinos en La Lobería." },
+      { question: "¿Cuál es la mejor temporada para el avistamiento de ballenas?", answer: "Junio a septiembre es la temporada de migración de ballenas jorobadas a lo largo de la costa ecuatoriana. Desde los altos acantilados de La Chocolatera, puede divisar chorros de ballenas distantes con binoculares. Estos 3 meses son también cuando la actividad de los lobos marinos es más vibrante." },
+      { question: "¿Qué otras atracciones vale la pena visitar cerca de La Chocolatera?", answer: "También puede visitar: La Lobería (colonia de lobos marinos, 5 minutos a pie), Playa Punta Carnero (adecuada para bañarse, 10 minutos en automóvil), Malecón de Salinas (amenidades completas de balneario)." }
     ]},
-    location: { title: "Ubicación en el Mapa", address: "RX6Q+PX, Salinas, Ecuador", openMaps: "Ver Ubicación en Google Maps" },
-    footer: { callToAction: "Como guardianes del ecosistema marino, por favor únanse a nosotros para respetar la naturaleza y proteger el océano.", text: "© 2026 Guía de Viaje de La Chocolatera · Todos los derechos reservados.\nEste sitio web es un proyecto independiente de información turística. No estamos afiliados al gobierno local ni a ninguna otra autoridad oficial.", made: "Este sitio web es un proyecto independiente de información turística. Hecho para exploradores", linksTitle: "Enlaces Relacionados", links: [
+    location: { title: "Ubicación en el Mapa", address: "Base Naval de Salinas, Salinas, Ecuador\n(Dentro de la base naval - se requiere control militar)", openMaps: "Ver Ubicación en Google Maps" },
+    footer: { callToAction: "Como guardianes del ecosistema marino, por favor únanse a nosotros para respetar la naturaleza y proteger el océano. No bañarse. Manténgase seguro.", text: "© 2026 Guía de Viaje de La Chocolatera · Todos los derechos reservados.\nEste sitio web es un proyecto independiente de información turística. No estamos afiliados con el gobierno local ni ninguna autoridad oficial.", made: "Este sitio web es un proyecto independiente de información turística. Hecho para exploradores.", linksTitle: "Enlaces Relacionados", links: [
       { name: "Dirección Nacional de Turismo", url: "https://ecuador.travel/" },
       { name: "Ministerio de Ambiente, Agua y Transición Ecológica", url: "https://www.ambienteyenergia.gob.ec/" },
       { name: "Ministerio de Turismo", url: "https://ecuador.travel/" },

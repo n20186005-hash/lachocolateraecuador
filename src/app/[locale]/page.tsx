@@ -10,12 +10,12 @@ import galleryImagesData from "@/gallery-data.json";
 const MAPS_URL = "https://maps.app.goo.gl/ncHLmJJcQfgoorA27";
 
 const GOOGLE_REVIEWS = [
-  { name: "Santiago M.", avatar: "SM", rating: 5, date: "2024-08-10", text: "La Chocolatera es simplemente espectacular. La puesta de sol sobre el Pacífico es una de las mejores que he visto en Ecuador. Muy recomendado para surfistas y familias." },
-  { name: "Jennifer Lee", avatar: "JL", rating: 5, date: "2024-07-15", text: "Amazing beach! The waves are perfect for surfing and the sunset view is breathtaking. The water is clean and the beach is well-maintained. A must-visit in Salinas." },
-  { name: "王小磊", avatar: "王", rating: 5, date: "2024-09-01", text: "非常漂亮的海滩！海水很清澈，日落景色美得令人窒息。这里也是冲浪的好地方，有很多冲浪学校可以报名。强烈推荐！" },
-  { name: "Diego Ramos", avatar: "DR", rating: 5, date: "2024-06-20", text: "Una playa hermosa con olas consistentes. El atardecer aquí es mágico. Hay buena infraestructura con restaurantes y estacionamiento. Ideal para pasar el día." },
-  { name: "Amanda Clark", avatar: "AC", rating: 4, date: "2024-05-08", text: "Beautiful beach with great surfing conditions. We spent the whole day here, enjoyed the sun and the Pacific breeze. The area is clean and safe. Will definitely come back." },
-  { name: "Valeria P.", avatar: "VP", rating: 5, date: "2024-08-30", text: "Hermoso lugar para disfrutar en familia. La playa está muy limpia, el oleaje es bueno para aprender a surfear. Sin duda uno de los mejores sitios de Salinas." },
+  { name: "Santiago M.", avatar: "SM", rating: 5, date: "2024-08-10", text: "La Chocolatera es única. El fenómeno del 'mar chocolate' es realmente increíble — el agua se ve de un color marrón oscuro por las corrientes. También ví lobos marinos en La Lobería. Llegue antes de las 14:00 para pasar el control naval." },
+  { name: "Jennifer Lee", avatar: "JL", rating: 5, date: "2024-07-15", text: "The chocolate sea is unlike anything I've ever seen! The waves crashing against the cliffs are terrifyingly beautiful. No swimming here — the currents are no joke. Bring a windbreaker, it's extremely windy. And don't forget your passport for the checkpoint!" },
+  { name: "Carlos R.", avatar: "CR", rating: 5, date: "2024-09-10", text: "Espectacular para observar lobos marinos. La Lobería está justo al lado. También ví ballenas a lo lejos con binoculares en temporada. Ojo: no se pueden bañar, hay corrientes peligrosas. El acceso es hasta las 15:00 por control naval." },
+  { name: "王小磊", avatar: "王", rating: 5, date: "2024-06-20", text: "站在大陆最西端的感觉太震撼了！咖啡色的海水猛烈拍击礁石，旁边还有海狮在晒太阳。注意：不能下水游泳，暗流非常危险。必须带护照通过海军检查站。风很大，要带防风外套。" },
+  { name: "Amanda Clark", avatar: "AC", rating: 4, date: "2024-05-08", text: "The blowhole effect when waves crash into the rocks is amazing! We spent 2 hours just watching the waves and the sea lions. Not a swimming beach at all — which is exactly what makes it special. Raw nature. Bring binoculars!" },
+  { name: "Valeria P.", avatar: "VP", rating: 5, date: "2024-08-30", text: "El atardecer desde los acantilados es mágico. El color del mar chocolate con el sol poniente es una imagen que no se me olvidará. Consejo: llevar chaqueta cortavientos y pasaporte. Prohibido bañarse." },
 ];
 
 function ScrollReveal({ children, className = "" }: { children: React.ReactNode; className?: string }) {

@@ -30,13 +30,19 @@ export async function generateMetadata(
       template: "%s | La Chocolatera",
     },
     description:
-      "A travel guide to La Chocolatera in Salinas, Ecuador. Explore the beautiful beaches, surfing spots, and coastal attractions.",
+      locale === 'es' ? "Guía de viaje a La Chocolatera en Salinas, Ecuador. Descubra el fenómeno natural del 'mar chocolate', la colonia de lobos marinos, y el punto más occidental del continente ecuatoriano." :
+      locale === 'zh' ? "La Chocolatera 旅行指南——探索厄瓜多尔大陆最西端的自然奇观：独特的\"巧克力海\"现象、海狮栖息地、以及惊涛拍岸的太平洋悬崖海岸。" :
+      "A travel guide to La Chocolatera in Salinas, Ecuador. Discover the unique 'chocolate sea' phenomenon, the sea lion colony, and the westernmost point of mainland Ecuador.",
     keywords: [
       "La Chocolatera",
       "Salinas tourism",
-      "Ecuador beaches",
-      "Surfing in Ecuador",
-      "Santa Elena attractions",
+      "Ecuador chocolate sea",
+      "Westernmost point Ecuador",
+      "Sea lions Ecuador",
+      "La Lobería",
+      "Punta Santa Elena",
+      "Naval base Salinas",
+      "Surfing Ecuador",
       "Pacific coast Ecuador",
     ],
     authors: [{ name: "La Chocolatera Travel Guide" }],
@@ -53,8 +59,9 @@ export async function generateMetadata(
       alternateLocale: ["en_US", "es_EC", "zh_CN"].filter(l => !l.startsWith(locale)),
       url: `${baseUrl}/${locale}`,
       title: "La Chocolatera — Salinas, Ecuador",
-      description:
-        "A travel guide to La Chocolatera in Salinas, Ecuador. Explore the beautiful beaches, surfing spots, and coastal attractions.",
+    description: (locale === 'es' ? "Guía de viaje a La Chocolatera en Salinas, Ecuador. Descubre el fenómeno natural del mar chocolate, la colonia de lobos marinos, y el punto más occidental del continente ecuatoriano." :
+      (locale === 'zh' ? "La Chocolatera 旅行指南——探索厄瓜多尔大陆最西端的自然奇观：独特的\"巧克力海\"现象、海狮栖息地、以及惊涛拍岸的太平洋悬崖海岸。" :
+      "A travel guide to La Chocolatera in Salinas, Ecuador. Discover the unique chocolate sea phenomenon, the sea lion colony, and the westernmost point of mainland Ecuador.")),
       siteName: "La Chocolatera Travel Guide",
       images: [
         {
@@ -104,6 +111,18 @@ export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "zh" }];
 }
 
+import { generateSchema } from "../schema";
+
+function SchemaScript({ locale }: { locale: string }) {
+  const schema = generateSchema(locale);
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default async function RootLayout({
   children,
   params,
@@ -114,6 +133,7 @@ export default async function RootLayout({
   const { locale } = await params;
   return (
     <html lang={locale} className={`${cormorant.variable} ${dmSans.variable}`}>
+      <SchemaScript locale={locale} />
       <body>{children}</body>
     </html>
   );
