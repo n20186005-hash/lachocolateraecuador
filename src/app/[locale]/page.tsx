@@ -2,9 +2,10 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import { Nav, Footer } from "@/components/SiteChrome";
+import { guideLabels, guides } from "@/data/guides";
+import type { Locale } from "@/i18n/translations";
 import { LangProvider, useLang } from "@/components/LangProvider";
-import { useTheme } from "next-themes";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import galleryImagesData from "@/gallery-data.json";
 
 const MAPS_URL = "https://maps.app.goo.gl/ncHLmJJcQfgoorA27";
@@ -31,87 +32,6 @@ function ScrollReveal({ children, className = "" }: { children: React.ReactNode;
     return () => obs.disconnect();
   }, []);
   return <div ref={ref} className={`reveal ${className}`}>{children}</div>;
-}
-
-function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return <div style={{ width: "24px", height: "24px" }} />;
-
-  return (
-    <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="theme-toggle-btn"
-      aria-label="Toggle theme"
-      style={{
-        background: "none",
-        border: "none",
-        color: "#fff",
-        cursor: "pointer",
-        padding: "0.25rem",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      {theme === "dark" ? (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="5" />
-          <line x1="12" y1="1" x2="12" y2="3" />
-          <line x1="12" y1="21" x2="12" y2="23" />
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-          <line x1="1" y1="12" x2="3" y2="12" />
-          <line x1="21" y1="12" x2="23" y2="12" />
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-        </svg>
-      ) : (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
-      )}
-    </button>
-  );
-}
-
-function Nav() {
-  const { t } = useLang();
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  return (
-    <nav className={`site-nav ${scrolled ? "scrolled" : ""}`}>
-      <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
-        <span style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", fontWeight: 700, color: "#fff" }}>
-          La Chocolatera
-        </span>
-      </div>
-      <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
-        <div className="nav-links">
-          <a href="#about">{t.nav.about}</a>
-          <a href="#visiting">{t.nav.visiting}</a>
-          <a href="#transportation">{t.nav.transportation}</a>
-          <a href="#tips">{t.nav.tips}</a>
-          <a href="#gallery">{t.gallery.title}</a>
-          <a href="#reviews">{t.nav.reviews}</a>
-          <a href="#faq">{t.nav.faq}</a>
-          <a href="#location">{t.nav.location}</a>
-        </div>
-        <ThemeToggle />
-        <LanguageSwitcher />
-      </div>
-    </nav>
-  );
 }
 
 function Hero() {
@@ -607,39 +527,6 @@ function Location() {
   );
 }
 
-function Footer() {
-  const { t } = useLang();
-  return (
-    <footer className="site-footer">
-      <div className="footer-links">
-        <p className="footer-links-title">{t.footer.linksTitle}</p>
-        <div className="footer-links-grid">
-          {t.footer.links.map((link: { name: string; url: string }, i: number) => (
-            <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="footer-link-item">
-              {link.name}
-            </a>
-          ))}
-        </div>
-      </div>
-      <div className="footer-legal" style={{ maxWidth: "1100px", margin: "0 auto", padding: "1rem 2rem 0", textAlign: "center" }}>
-        <Link href="/privacy" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
-          Privacy Policy
-        </Link>
-        <Link href="/terms" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
-          Terms of Service
-        </Link>
-        <Link href="/cookies" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>
-          Cookie Settings
-        </Link>
-      </div>
-      <p className="footer-text" style={{ marginTop: "2rem", fontSize: "0.9rem", fontWeight: 600, color: "var(--color-gold)" }}>
-        {t.footer.callToAction}
-      </p>
-      <p className="footer-text" style={{ marginTop: "1rem", whiteSpace: "pre-line" }}>{t.footer.text}</p>
-    </footer>
-  );
-}
-
 export default function Home(props: { params: Promise<{ locale: string }> }) {
   const params = React.use(props.params);
   return (
@@ -656,6 +543,10 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
       <Reviews />
       <FAQ />
       <Location />
+      <section className="section" id="nearby"><div className="container">
+        <h2 className="section-title">{guideLabels[params.locale as Locale].nearby}</h2>
+        <ul>{guides.map(guide => <li key={guide.slug}><Link href={`/${params.locale}/nearby/${guide.slug}`}>{guide[params.locale as Locale].name}</Link></li>)}</ul>
+      </div></section>
       <Footer />
     </LangProvider>
   );

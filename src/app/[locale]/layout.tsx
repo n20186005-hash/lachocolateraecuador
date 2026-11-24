@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "../globals.css";
+import { ThemeProvider } from "next-themes";
 
 const cormorant = Cormorant_Garamond({
   weight: ["400", "600", "700"],
@@ -132,9 +133,11 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
   return (
-    <html lang={locale} className={`${cormorant.variable} ${dmSans.variable}`}>
-      <SchemaScript locale={locale} />
-      <body>{children}</body>
+    <html suppressHydrationWarning lang={locale} className={`${cormorant.variable} ${dmSans.variable}`}>
+      <body className="antialiased">
+        <SchemaScript locale={locale} />
+        <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

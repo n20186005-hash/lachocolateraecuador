@@ -1063,3 +1063,13 @@ body {
     padding: 1.25rem;
   }
 }
+
+.place-guide { max-width: 52rem; margin: auto; padding: 2rem clamp(1rem, 4vw, 3rem); line-height: 1.75; }
+.place-guide section { padding: 1.25rem 0; scroll-margin-top: 5rem; }
+.place-guide .section-title { margin-bottom: .6rem; }
+.place-guide table { width: 100%; border-collapse: collapse; }
+.place-guide th, .place-guide td { padding: .55rem; text-align: start; vertical-align: top; border-bottom: 1px solid currentColor; }
+.place-guide li { margin: .4rem 0 .4rem 1.5rem; }
+.place-guide dt { font-weight: bold; }
+.place-guide dd { margin-bottom: .8rem; }
+.guide-hours { max-width: 42rem; margin: 1rem auto; }
