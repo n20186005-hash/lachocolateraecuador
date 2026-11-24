@@ -21,9 +21,9 @@ with sync_playwright() as pw:
                 page.evaluate('window.scrollTo({top:0,behavior:"instant"})')
                 bg=page.locator('.hero-bg').first
                 img=bg.evaluate("""async e=>{
-                   let source=getComputedStyle(e).backgroundImage.match(/url\\(["']?([^"')]+)["']?\\)/)?.[1] || e.querySelector('img')?.currentSrc;
+                   const style=getComputedStyle(e).backgroundImage; let source=style.startsWith('url("') ? style.slice(5,-2) : e.querySelector('img')?.currentSrc;
                    if(!source)return null;
-                   const im=new Image();im.src=source;await im.decode();
+                   const im=new Image();im.src=source;await im.decode().catch(()=>{});
                    const r=e.getBoundingClientRect();return {source:imageUrl(source),pixels:im.naturalWidth,width:r.width,height:r.height,visible:getComputedStyle(e).visibility==='visible'&&Number(getComputedStyle(e).opacity)>0};
                    function imageUrl(u){return new URL(u,location.href).href}
                 }""")
